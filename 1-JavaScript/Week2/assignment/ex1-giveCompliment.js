@@ -1,3 +1,4 @@
+//test
 'use strict';
 /* -----------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-1-you-are-amazing
