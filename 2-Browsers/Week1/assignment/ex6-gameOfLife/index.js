@@ -15,6 +15,7 @@ const NUM_ROWS = 40;
 // life or death
 function createCell(x, y) {
   const alive = Math.random() > 0.5;
+  const lifeTime = alive ? 1 :0 ; // new
   return {
     x,
     y,
@@ -50,13 +51,17 @@ function createGame(context, numRows, numColumns) {
   // Draw a cell onto the canvas
   function drawCell(cell) {
     // Draw cell background
-    context.fillStyle = '#303030';
+    context.fillStyle = 'rga(24, 215,236, ${opacity})'
     context.fillRect(
       cell.x * CELL_SIZE,
       cell.y * CELL_SIZE,
       CELL_SIZE,
       CELL_SIZE
     );
+
+    let opacity = 1;
+    switch(cell.lifeTime);
+
 
     if (cell.alive) {
       // Draw living cell inside background
