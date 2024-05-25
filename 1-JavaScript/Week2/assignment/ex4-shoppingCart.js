@@ -1,4 +1,6 @@
 'use strict';
+
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Assignments/tree/main/1-JavaScript/Week3#exercise-4-shopping-at-the-supermarket
 
@@ -23,18 +25,19 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
-function addToShoppingCart(shopList) {
-  if (shopList){
-    shoppingCart.push(shopList);
-  if (shoppingCart > 3){
-    shoppingCart.shift()
-  }
-  }
-  return 'you bought' +'shoppingCart.joint()'+'!';
+function addToShoppingCart(item) {
+    
+    if (item){
+      shoppingCart.push(item);
+    } if (shoppingCart.length > 3){
+      shoppingCart.shift();
+    }
+  
+  return 'you bought ${shoppingCart.join(", ")}!';
   // TODO complete this function
 
 }
-
+//addShoppingCart();
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
@@ -81,4 +84,4 @@ function test() {
   test5();
 }
 
-
+test();

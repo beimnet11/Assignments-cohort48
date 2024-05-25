@@ -21,10 +21,11 @@ function addToShoppingCart(cart, item) {
   const newShoppingCart = [...cart];
   newShoppingCart.push(item);
   if (newShoppingCart.length > 3){
-    newShoppingCart.shift();
+    newShoppingCart.slice(1);
   }
   return newShoppingCart;
 }
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

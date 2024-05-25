@@ -45,7 +45,7 @@ function tellFortune(numKidsArray, partnerNamesArray,locationArray,jobTitlesArra
   const partnerNames = selectRandomly(partnerNamesArray);
   const location = selectRandomly(locationArray);
   const jobTitles = selectRandomly(jobTitlesArray);
-  return 'you will be a '+jobTitles+' in '+location+' married to '+partnerNames+' with '+numKids+' number of kids'
+  return 'you will be a ${jobTitles} in ${location} married to ${partnerNames} with ${numKids} number of kids'
 }
 
 function main() {
