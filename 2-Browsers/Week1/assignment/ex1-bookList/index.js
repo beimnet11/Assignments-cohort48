@@ -18,6 +18,12 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 
 function createBookList(books) {
+  document.createElement('ul');
+  books.forEach(book => {
+    const p = document.createElement('p');
+    p.textContent = `${book.title} by ${book.author}`;
+    appendChild(p);
+  });
   // TODO your code goes in here, return the ul element
 }
 
