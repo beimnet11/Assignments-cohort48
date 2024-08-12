@@ -18,7 +18,6 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 //cspell: enable
 // TODO your code goes in here, return the ul element
 
-
 function createBookList(books){
   const ul = document.createElement('ul');
   const imageFilenames = [
